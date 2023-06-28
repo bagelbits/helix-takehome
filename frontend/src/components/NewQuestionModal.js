@@ -10,13 +10,15 @@ const NewQuestionModal = (props) => {
 
   return (
     <Fragment>
-      <div className="flex justify-end items-end p-1.5">
-        <button
-          className="bg-indigo-500 text-white text-sm p-1.5"
-          onClick={toggle}
-        >
-          Ask a Question
-        </button>
+      <div className="w-3/4 mx-auto py-8">
+        <div className="flex justify-end items-center p-1.5">
+          <button
+            className="bg-indigo-500 text-white text-sm p-1.5"
+            onClick={toggle}
+          >
+            Ask a Question
+          </button>
+        </div>
       </div>
 
       {showModal ? (
