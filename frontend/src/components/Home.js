@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Col, Container, Row } from "reactstrap";
 import QuestionList from "./QuestionList";
 import NewQuestionModal from "./NewQuestionModal";
 
@@ -21,18 +20,14 @@ const Home = () => {
     getQuestions();
   };
   return (
-    <Container style={{ marginTop: "20px" }}>
-      <Row>
-        <Col>
-          <NewQuestionModal resetState={resetState} />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <QuestionList questions={questions} resetState={resetState} />
-        </Col>
-      </Row>
-    </Container>
+    <div className=" bg-gray-100 min-h-screen">
+      <div>
+        <NewQuestionModal resetState={resetState} />
+      </div>
+      <div>
+        <QuestionList questions={questions} resetState={resetState} />
+      </div>
+    </div>
   );
 };
 
